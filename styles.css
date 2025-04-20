@@ -1,0 +1,39 @@
+.ctrl-p {
+	position: fixed;
+	inset: 0;
+	background-color: rgba(0,0,0,0.1);
+
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.ctrl-p .pallet {
+	background-color: hsl(var(--background));
+	padding: 5px;
+
+	border: 1px solid hsl(var(--input));
+	border-radius: 0 0 var(--radius) var(--radius);
+
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+
+	min-width: 40ch;
+	max-width: 90vw;
+}
+
+
+.ctrl-p .result {
+	display: flex;
+	padding: 0 var(--radius);
+}
+
+.ctrl-p .result.focus {
+	background-color: hsl(var(--muted));
+	border-radius: var(--radius);
+}
+
+.ctrl-p .result .label {
+	flex-grow: 1;
+}
