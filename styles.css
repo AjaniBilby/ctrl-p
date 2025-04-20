@@ -37,3 +37,13 @@
 .ctrl-p .result .label {
 	flex-grow: 1;
 }
+
+.ctrl-p .result .shortcut {
+	display: flex;
+	gap: 8px;
+}
+
+.ctrl-p .result .shortcut kbd {
+	color: hsl(var(--muted-foreground));
+	border-radius: 5px;
+}

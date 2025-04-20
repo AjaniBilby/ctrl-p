@@ -1,9 +1,9 @@
 {
 	"name": "ctrl-p",
-	"version": "0.0.1",
-	"description": "easy keyboard navigation without having to change your html",
+	"version": "0.0.2",
+	"description": "an easy command pallet for any website",
 	"keywords": [
-		"dpad",
+		"control palette",
 		"keyboard",
 		"navigation",
 		"html",
@@ -16,6 +16,9 @@
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/AjaniBilby/ctrl-p.git"
+	},
+	"scripts": {
+		"build": "tsc & terser dist/index.js --compress --mangle --output dist/index.min.js"
 	},
 	"license": "MIT",
 	"author": "Ajani Bilby",
