@@ -242,6 +242,7 @@
 
 	const shortCuts = new Array<{ keys: Set<string>, element: HTMLElement }>();
 	function FetchCommands() {
+		if (!document || !document.body) return;
 		shortCuts.length = 0;
 		for (const e of document.body.querySelectorAll('[data-cmd], [cmd]')) {
 			if (!(e instanceof HTMLElement)) continue;
